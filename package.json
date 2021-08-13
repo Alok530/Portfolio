@@ -1,7 +1,7 @@
 {
   "name": "college-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "hellow",
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.1",
@@ -10,8 +10,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node source/app.js"
   },
-  "author": "",
+  "author": "alok",
   "license": "ISC"
 }
