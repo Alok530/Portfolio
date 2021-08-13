@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy tutorials</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            {{!-- <a href="index.html"><img src="img/logo.png" alt="error"></a> --}}
+            <a href="/blog"><img src="https://lh3.googleusercontent.com/a-/AOh14GjvWvkSAZM9M6-rtIwU7ofWpAmd8FjYLICGd_LW=s288-p-rw-no" alt="error"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/activity">ACTIVITY</a></li>
+                    <li><a href="/course">SKILLS</a></li>
+                    <li><a href="/contact">FEEDBACK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-- blog page content  -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid, eius nisi sunt sapiente
+                    quibusdam similique voluptate asperiores corrupti fuga nulla facilis distinctio odit reiciendis
+                    aspernatur, dolor ipsa itaque nostrum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam esse ipsa eveniet numquam at, optio
+                    praesentium necessitatibus porro explicabo. Asperiores! Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum sed voluptate
+                    fuga doloribus iusto unde. Ipsum, facere doloribus distinctio ut corporis, dignissimos magnam minus
+                    fugiat, laboriosam tempora similique sed! Beatae, natus?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, expedita unde nisi eligendi
+                    consequatur totam mollitia iure at temporibus sint quisquam voluptate, aperiam voluptates porro
+                    quibusdam necessitatibus provident facere quos!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam aspernatur accusantium
+                    sapiente quisquam, praesentium sed nemo, maiores nihil atque dolores ex consequatur, iusto quos
+                    accusamus impedit reprehenderit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                    error quaerat, enim vel eveniet, ut aliquid fuga, maiores cum fugiat sed dignissimos! Deserunt
+                    quidem sed tempore, obcaecati maiores suscipit. Suscipit! hic veniam.</p>
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <samp>Business Analystics</samp>
+                    <samp>21</samp>
+                </div>
+                <div>
+                    <samp>Data Science</samp>
+                    <samp>28</samp>
+                </div>
+                <div>
+                    <samp>Machine Learning</samp>
+                    <samp>15</samp>
+                </div>
+                <div>
+                    <samp>Computer Science</samp>
+                    <samp>15</samp>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    {{!-- <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias perspiciatis ipsum quis debitis
+            nulla.Porro quod amet reprehenderit? culpa ab mollitia eaque, porro corporis!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section> --}}
+
+    <section class="buttom">
+        <h2>Quick links</h2>
+        <div class="container">
+            <div class="last">
+                <div class="buttom-col">
+                    <h3>Contact Me</h3>
+                    <ul>
+                        <li>Chhapra, Bihar</li>
+                        <li>Email: alok@info.in</li>
+                        <li>Phone: 9823779889</li>
+                    </ul>
+                </div>
+                <div class="buttom-col" id="social">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://m.facebook.com/alok.alokroy.585"><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/alok-kumar-rai-3261b21ba/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="buttom-col">
+                    <h3>Message</h3>
+                    <form action="/message" method="POST">
+                        <input type="email" required placeholder="Email-Id" name="mail">
+                        <input type="text" required placeholder="Message" name="message">
+                        <input type="submit" value="Submit" class="btoon">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        let navlink = document.getElementById("navlinks");
+        function showMenu() {
+            navlink.style.right = "0";
+        }
+
+        function hideMenu() {
+            navlink.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
