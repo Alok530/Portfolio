@@ -21,6 +21,6 @@ const ClientsSchema = new mongoose.Schema({
 });
 
 // now we need to create a Collection here: student is Collection name 
-const collegeClients = new mongoose.model("collegeClients", ClientsSchema);
+const viewersfeedback = new mongoose.model("viewersfeedback", ClientsSchema);
 
-module.exports = collegeClients;
+module.exports = viewersfeedback;

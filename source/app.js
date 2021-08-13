@@ -20,8 +20,8 @@ app.use(express.static(cssPath));
 require('../connection/conn');
 
 // importing schema
-const collegeClients = require('../models/contact');
-const collegeMessage = require('../models/message');
+const viewersfeedback = require('../models/contact');
+const viewersmessage = require('../models/message');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -46,7 +46,7 @@ app.get("/contact", (req, res) => {
 
 app.post("/contact-form", async (req, res) => {
     try {
-        const newClient = new collegeClients({
+        const newClient = new viewersfeedback({
             name: req.body.name,                        
             email: req.body.email,
             mobile: req.body.mobile,            
@@ -61,7 +61,7 @@ app.post("/contact-form", async (req, res) => {
 });
 app.post("/message", async (req, res) => {
     try {
-        const newMessage = new collegeMessage({            
+        const newMessage = new viewersmessage({            
             email: req.body.email,            
             message: req.body.message,
         })                
