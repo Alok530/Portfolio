@@ -40,10 +40,10 @@
         <p>Thankyou for giveing your valueable FeedBack</p>
         <div class="contact-form">
             <form action="/contact-form" method="POST">
-                <input type="text" required name="name" placeholder="Enter Your Name">
-                <input type="email" required name="email" placeholder="Enter Your Email">
-                <input type="text" name="mobile" placeholder="Mobile Number">
-                <textarea name="message" id="message" required cols="25" rows="8"
+                <input type="text" autocomplete="off" required name="name" placeholder="Enter Your Name">
+                <input type="email" autocomplete="off" required name="email" placeholder="Enter Your Email">
+                <input type="text" autocomplete="off" name="mobile" placeholder="Mobile Number">
+                <textarea name="message" autocomplete="off" id="message" required cols="25" rows="8"
                     placeholder="Give Your FeedBack"></textarea>
                 <input type="submit" value="Submit Now" class="btn">
             </form>
@@ -74,8 +74,8 @@
                 <div class="buttom-col">
                     <h3>Message</h3>
                     <form action="/message" method="POST">
-                        <input type="email" required placeholder="Email-Id" name="mail">
-                        <input type="text" required placeholder="Message" name="message">
+                        <input type="email" autocomplete="off" required placeholder="Email-Id" name="mail">
+                        <input type="text" autocomplete="off" required placeholder="Message" name="message">
                         <input type="submit" value="Submit" class="btoon">
                     </form>
                 </div>
