@@ -550,8 +550,6 @@ nav .fa{
     width: 100%;    
     border-radius: 10px;
 } 
-
-
 .copyrights{
     background-color: black;
     color: white;
@@ -662,14 +660,5 @@ nav .fa{
     }
     .container{
         padding-bottom: 40px;
-    }
-    #social{
-        margin-top: -30px;
-    }
-    /* .last p{
-        font-size: 10px;
-    }
-    .last h2{
-        font-size: 15px;
-    } */
+    }    
 }

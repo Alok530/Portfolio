@@ -5,8 +5,6 @@ const port = process.env.PORT || 3000;
 const path = require('path');
 const hbs = require('hbs');
 
-console.log(process.env.DB);
-
 // for view engine 
 const viewsPath = path.join(__dirname, '../source/views');
 app.set('view engine', 'hbs');
