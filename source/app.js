@@ -45,30 +45,28 @@ app.get("/contact", (req, res) => {
 app.post("/contact-form", async (req, res) => {
     try {
         const newClient = new viewersfeedback({
-            name: req.body.name,                        
+            name: req.body.name,
             email: req.body.email,
-            mobile: req.body.mobile,            
+            mobile: req.body.mobile,
             message: req.body.message,
-        })                
-        const result = await newClient.save();
-        console.log(result);
-        res.render("index");        
-} catch (error) {
-    res.send(error);
-}
+        })
+        const result = await newClient.save();        
+        res.render("index");
+    } catch (error) {
+        res.send(error);
+    }
 });
 app.post("/message", async (req, res) => {
     try {
-        const newMessage = new viewersmessage({            
-            email: req.body.email,            
+        const newMessage = new viewersmessage({
+            email: req.body.email,
             message: req.body.message,
-        })                
-        const result = await newMessage.save();
-        console.log(result);
-        res.render("index");        
-} catch (error) {
-    res.send(error);
-}
+        })
+        const result = await newMessage.save();                
+        res.render("index");
+    } catch (error) {
+        res.send(error);
+    }
 });
 
 
