@@ -34,9 +34,6 @@ app.get("/activity", (req, res) => {
 app.get("/course", (req, res) => {
     res.render('course.hbs');
 });
-app.get("/blog", (req, res) => {
-    res.render('blog.hbs');
-});
 app.get("/contact", (req, res) => {
     res.render('contact.hbs');
 });

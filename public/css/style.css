@@ -12,13 +12,17 @@
     position: relative;       
 }
 nav{
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 6%;
 }
 nav img{
-    width: 200px;
+    width: 100px;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+    display: none;
 }
 .nav-links{
     flex: 1;
@@ -87,7 +91,7 @@ nav .fa{
     }
     .nav-links{
         position: absolute;
-        background-color: rgb(98, 74, 37);
+        background-color: red;
         height: 100vh;
         width: 200px;
         transition: 1s;
@@ -550,6 +554,8 @@ nav .fa{
     width: 100%;    
     border-radius: 10px;
 } 
+
+
 .copyrights{
     background-color: black;
     color: white;
@@ -660,8 +666,14 @@ nav .fa{
     }
     .container{
         padding-bottom: 40px;
-    }    
-    #social{
-        margin-top: 10px;
     }
+    #social{
+        margin-top: -30px;
+    }
+    /* .last p{
+        font-size: 10px;
+    }
+    .last h2{
+        font-size: 15px;
+    } */
 }
