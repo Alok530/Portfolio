@@ -309,7 +309,7 @@ nav .fa{
 /* call to us  */
 .cta{
     width: 80%;
-    margin: -50px auto;
+    margin: 30px auto;
     text-align: center;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('banner2.jpg');
     border-radius: 10px;
